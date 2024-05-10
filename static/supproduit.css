@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: 300px;
+    border: solid 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.supp h2{
+    color: red ;
+}
+
+.gd{
+    display: flex;
+    margin-left: 80px;
+   
+}
+
+.droit{
+    background-color: blue;
+    color: aliceblue;
+}
+.gauche{
+    background-color:beige;
+    color: aliceblue;
+    margin-right: 10px;
+}

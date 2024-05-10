@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vente.css') }}">
+    <title>vente</title>
+</head>
+<body>
+    
+    <div class="deuxieme5">
+        <div class="tble5">
+            <h3>Ajouter une nouvelle vente</h3>
+            <form method="post" action="{{url_for('ajout_vente')}}">
+                <label for="Quantitevendu">Quantité vendue :</label>
+                <input type="text" id="Quantitevendu" name="Quantitevendu"><br><br>
+            
+                <label for="Date">Date de la vente :</label>
+                <input type="date" id="Date" name="Date"><br><br>
+            
+                <label for="produit">Produit vendu :</label>
+                <select id="produit" name="produit">
+                    {% for produit in produits %}
+                    <option value="{{ produit.id }}">{{ produit.produit }}</option>
+                    {% endfor %}
+                </select><br><br>
+            
+                <label for="nom">Client :</label>
+                <select id="nom" name="nom">
+                    {% for client in clients %}
+                    <option value="{{ client.id }}">{{ client.nom }}</option>
+                    {% endfor %}
+                </select><br><br>
+            
+                <input type="submit" value="Ajouter la vente">
+            </form>
+            
+        </div> 
+    </div>           
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un produit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ajoutprod.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+            <h1>Modifier un produit</h1>
+        </div>
+
+        <form method="post" action="{{ url_for('modproduit', id=resultat[0]) }}">
+            <label for="nom">Nom du produit</label>
+            <input type="text" id="nom" name="nom" value="{{ resultat[1] }}" required>
+
+            <label for="categorie">Type</label>
+            <input type="text" id="categorie" name="categorie" value="{{ resultat[2] }}" required>
+
+            <label for="prix">Prix</label>
+            <input type="number" id="prix" name="prix" value="{{ resultat[3] }}" required>
+
+            <button type="submit">Modifier</button>
+        </form>
+    </div>
+</body>
+</html>

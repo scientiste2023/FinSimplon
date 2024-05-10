@@ -1,0 +1,142 @@
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(172, 172, 172, 0.037);
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid red ;  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.one {
+    width: 30%;
+    height: 70%;
+    border: 2px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sel {
+    width: 65%;
+    height: 70%;
+    border: 2px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sel .ol {
+    width: 70%;
+    height: 15%;
+    /* border: 2px solid blue ;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one .bel {
+    width: 45%;
+    height: 45%;
+    /* border: 2px solid blue ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.one .bol {
+    width: 45%;
+    height: 45%;
+    /* border: 2px solid blue ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bol div {
+    width: 80%;
+    height: 45%;
+    /* border: 2px solid blue ; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bel {
+    border-radius: 48% 52% 50% 50% / 46% 47% 53% 54%;
+    border: 2px solid red;
+    background-image: url('assets/css/images/faces/1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.sel form {
+    width: 70%;
+    height: 70%;
+    /* border: 2px solid wheat; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 2fr 6fr;  */
+}
+
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+div h3 {
+    text-align: center;
+}
+
+.gd {
+    width: 20%;
+    height: 70%;
+    margin-left: 10px;
+    /* background-color: blue; */
+}
+
+.ol button {
+
+    width: 25%;
+    height: 70%;
+    /* border:2px solid red ; */
+    background-color: rgb(89, 217, 157);
+    text-align: center;
+}

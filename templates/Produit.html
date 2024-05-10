@@ -1,0 +1,80 @@
+{% extends "base.html"%}
+{% block centre%}
+<div class="home-content">
+  <div class="overview-boxes">
+    <!-- Vos autres éléments ici -->
+  </div>
+
+  <!-- Liste des produits -->
+  <!-- Liste des produits -->
+  <div class="sales-boxes">
+    <div class="recent-sales box">
+      <div class="title">
+        <p>Liste Produits</p>
+        <!-- Boutons pour ajouter un produit -->
+        <button id="print-report">Imprimer le rapport</button>
+        <button type="button">
+          <a href="{{ url_for('ajoutprod') }}">Ajout produit</a>
+        </button>
+        <!-- Dropdown pour la sélection de la période -->
+        <div id="dropdown-list" class="dropdown-content">
+          <a href="#">Journalier</a>
+          <a href="#">Hebdomadaire</a>
+          <a href="#">Mensuel</a>
+        </div>
+      </div>
+      <!-- Détails des produits -->
+      <div class="sales-details">
+        <ul class="details">
+          <li class="topic">ID</li>
+          {% for row in resultat %}
+          <li><a href="#">{{ row[0] }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="details">
+          <li class="topic">Produit</li>
+          {% for row in resultat %}
+          <li><a href="#">{{ row[1] }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="details">
+          <li class="topic">Type</li>
+          {% for row in resultat %}
+          <li><a href="#">{{ row[2] }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="details">
+          <li class="topic">Prix</li>
+          {% for row in resultat %}
+          <li><a href="#">{{ row[3] }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="details">
+          <li class="topic">Action</li>
+          {% for row in resultat %}
+          <li>
+            <div class="icon">
+              <!-- Bouton pour modifier un produit -->
+              <a href="{{ url_for('modproduit', id=row[0]) }}">
+                <i class='bx bx-edit edit-icon' style='font-size: 30px; color: blue;'></i>
+              </a>
+              <!-- Bouton pour supprimer un produit -->
+              <a href="{{ url_for('supproduit', id=row[0]) }}"
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer le produit N {{row[0] }} ?')">
+                <i class='bx bx-trash delete-icon' style='font-size: 30px; color: red;'></i>
+              </a>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Bouton "Voir plus" -->
+      <div class="button">
+        <a href="#">Voir plus</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock %}

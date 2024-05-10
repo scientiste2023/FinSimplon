@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ajoutprod.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <div class="red">
+            <h1>Modifier un produit</h1>
+
+        </div>
+
+        
+        <form method="post" action="{{ url_for('modclient', id=resultat[0]) }}">
+        
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" value="{{resultat[1]}}" required>
+      
+            <label for="sexe">Sexe</label>
+            <select id="sexe" name="sexe" value="{{resultat[2]}}" required>
+                <option value="">Sélectionnez le sexe</option>
+                <option value="homme">Male</option>
+                <option value="femme">Female</option>
+                <option value="autre">Autre</option>
+            </select>
+
+      
+            <button type="submit">Modifier</button>
+          </form>
+
+
+
+    </div>
+</body>
+</html>

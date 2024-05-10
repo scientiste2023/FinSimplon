@@ -1,0 +1,378 @@
+header{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+}
+body{
+    font-weight: 290;
+}
+a{
+    text-decoration : none;
+}
+nav{
+    width: 100%;
+    height: 45px;
+    background-color:rgb(44, 125, 152) ;
+    text-align: center;
+    color: white;
+    align-items: center;
+    padding: 0px; 
+}
+main{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main div:nth-child(1){
+    width: 16%;
+    height: 260px;
+    background-color:rgb(44, 125, 152) ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 160px;
+    margin-left: 40%;
+    border-radius: 50px;
+    color: aliceblue;
+}
+main div:nth-child(1) form{
+    text-align: center;
+    margin: 20px;
+}
+main div:nth-child(1) input{
+    margin: 6px;
+    text-align: center;
+}
+main div:nth-child(1) a{
+    color: white;
+
+}
+main div:nth-child(1) button{
+    border-radius: 7px;
+    background-color: gray;
+    margin-top: 9px;
+}
+
+/* ce que je dois copier pour la page 2, le menu */
+
+/* ce que je dois copier pour la page 3, le menu */
+.page3{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.premier{
+    width: 16%;
+    height: 100%;
+    background-color:rgb(44, 125, 152) ;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 50px 0px 0px 0px;
+}
+.premier button{
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 9px;   
+}
+.premier button:nth-child(1){
+    background-color: gray;
+}
+.deuxieme{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.btn{
+    width: 93%;
+    height: 4%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: end;
+    margin-top: 90px;
+}
+.btn button{
+    background-color: rgb(54, 213, 42);
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    /* margin: 3px; */
+}
+/* tableau */
+.tble{
+    width: 100%;
+    height: 95%;
+    /* background-color: rgb(117, 75, 12); */
+}
+.tble caption{
+    text-align: start;
+}
+table {
+    border-collapse: collapse;
+    margin-left: 50px;  
+}
+td, th /* Mettre une bordure sur les td et les th */ {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    width: 210px;
+    text-align: center;
+    font-weight: 550;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+td:nth-child(1){
+    width: 80px;
+}
+td:nth-child(2){
+    width: 180px;
+}
+td:nth-child(3){
+    width: 180px;
+}
+td:nth-child(4){
+    width: 180px;
+}
+td:nth-child(5){
+    width: 170px;
+}
+
+th{
+    width: 100px;
+    background-color: rgb(79, 180, 234);
+    color: white;
+    font-weight: 700;
+}
+.un{
+    background-color: rgb(181, 217, 233);
+}
+.deux{
+    background-color: rgb(217, 231, 244);
+}
+/* style du td pour la colonne action */
+.activer{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+.boutonM1{
+    font-size: 18px;
+    width: 52%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px transparent;
+    color: white;
+    background-color: rgb(255, 174, 0);
+    margin-right: 15px;
+}
+.boutonS2{
+    font-size: 18px;
+    width: 52%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px transparent;
+    color: white;
+    background-color: rgb(225, 0, 0, 0.904);
+    padding-right: 15px;
+}
+.boutonS2 a{
+    text-decoration : none;
+}
+.boutonM1 a{
+    text-decoration : none;
+}
+/* fin du style du td pour la colonne action */
+.page5{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.premier5{
+    width: 16%;
+    height: 100%;
+    background-color:rgb(44, 125, 152) ;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 50px 0px 0px 0px;
+
+}
+.premier5 button{
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 9px;   
+}
+.premier5 button:nth-child(1){
+    background-color: gray;
+    color: white;
+}
+.deuxieme5{
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.btn5{
+    width: 93%;
+    height: 30%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    
+}
+.btn5 button{
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    margin: 7px;
+}
+.btn5 button a{
+    color: white;
+}
+.red{
+    background: red;
+
+}
+.vert{
+    background-color: rgb(54, 213, 42);
+}
+
+.tble5 h3{
+    margin-left: 75px;
+    padding: 30px;
+}
+.form5{
+    display: grid;
+    grid-template-columns: 10% 60%;
+    margin-left: 100px;
+    row-gap: 20px;
+    /* justify-content: center; */
+    
+
+}
+.input5{
+    border: 1px solid rgb(36, 115, 184);
+    border-radius: 3px;
+    width: 90%;
+    height: 35px;
+    
+}
+
+
+
+
+
+.page4{
+    width: 100%;
+    height: 690px;
+    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.premier4{
+    width: 16%;
+    height: 100%;
+    background-color:rgb(44, 125, 152) ;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 50px 0px 0px 0px;
+
+}
+.premier4 button{
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 9px; 
+ 
+}
+.premier4 button:nth-child(1){
+    background-color: gray;
+    color: white; 
+}
+.deuxieme4{
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.btn4{
+    width: 93%;
+    height: 2%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: end;
+    margin-top: 90px;
+    align-items: center;
+}
+.btn4 button{
+    background-color: rgb(54, 213, 42);
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    /* margin: 3px; */
+}
+/* <!-- la derniere div pour le tableau --> */
+.success{
+    /* text-align: start; */
+    width: 30%;
+    height: 7%;
+    background-color: rgb(227, 237, 204);
+    display: flex;
+    margin-left: 145px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 7px;
+
+}
+/* tableau */
+.tble4{
+    width: 100%;
+    height: 95%;
+    /* margin-top: 15px; */
+
+    /* background-color: rgb(117, 75, 12); */
+}
+.tble4 caption{
+    text-align: start;
+}
+.table4 {
+    border-collapse: collapse;
+    margin-left: 50px;  
+}
+
+th{
+    width: 100px;
+    background-color: rgb(79, 180, 234);
+    color: white;
+    font-weight: 700;
+}
+.un{
+    background-color: rgb(181, 217, 233);
+}
+.deux{
+    background-color: rgb(217, 231, 244);
+}
+.couleur{
+    color: rgb(45, 193, 22);
+}

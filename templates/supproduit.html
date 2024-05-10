@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Suppression</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='supproduit.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Suppression de Produit</h1>
+        <div>
+            <p>Vous êtes sur le point de supprimer le produit {{ produit[0] }}. Êtes-vous sûr de vouloir continuer ?</p>
+        </div>
+        <div class="gd">
+            <button class="gauche"><a href="{{url_for('Produit')}}">Retour</a></button>
+            <button type="submit" class="droit">
+                <a href="{{ url_for('supproduit', id=produit[0]) }}">Valider</a>
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
